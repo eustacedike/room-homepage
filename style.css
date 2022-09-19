@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+.top {
+    display: flex;
+    height: 425px;
+}
+
+.desk {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    color: white;
+    margin: 10px auto;
+    left: 5%;
+}
+
+.mob {
+    background-color: #fff;
+    /* transform: translateY(0%); */
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    left: 0%;
+    z-index: 8;
+}
+
+.mob a {
+    color: black;
+}
+
+.hamb, .close {
+    width: 16px !important;
+    align-self: flex-end;
+    margin: 5px 0;
+}
+
+.hamb {
+    display: none;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    transition: 700ms;
+}
+
+nav a:hover {
+   border-bottom: 1px solid white;
+    
+}
+
+.bottom {
+    display: flex;
+    height: 255px;
+    justify-content: space-between;
+}
+
+.bottom div {
+    width: 29.5%;
+}
+
+.bottom img {
+    width: 100%;
+}
+
+.bottom-2 p {
+    line-height: 15px;
+    text-align: justify;
+}
+.bottom-2 {
+    padding-top: 30px;
+    
+}
+
+.bottom-3b {
+    display: none;
+}
+
+.txt {
+    margin: 5% 10%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+scroll-snap-type: x mandatory;
+-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.txt::-webkit-scrollbar {
+    display: none;
+  }
+
+.txt div {
+   min-width: 100%;
+   scroll-snap-align: start;
+margin-right: 20px;
+}
+
+.top-1 {
+    width: 60%;
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+scroll-snap-type: x mandatory;
+-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.top-1::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.hero-1 {
+    background-image: url(./images/desktop-image-hero-1.jpg);
+    min-width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    scroll-snap-align: start;
+}
+.hero-2 {
+    background-image: url(./images/desktop-image-hero-2.jpg);
+    min-width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    scroll-snap-align: start;
+}
+.hero-3 {
+    background-image: url(./images/desktop-image-hero-3.jpg);
+    min-width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    scroll-snap-align: start;
+
+}
+
+
+
+.top-2{
+    width: 40%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.top-2 h4 {
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    cursor: pointer;
+}
+
+.top-2 h4:hover {
+   opacity: 0.4;
+}
+
+
+
+
+.txt p {
+    line-height: 18px;
+    margin: 26px 0;
+}
+
+.btn {
+    width: 27%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.btn button {
+    border: none;
+    padding: 15px 0;
+    background-color: black;
+    cursor: pointer;
+    width: 50%;
+}
+
+.top-2 button:hover {
+    background-color: grey;
+}
+
+@media  (max-width: 1022px) {
+.top {
+    flex-wrap: wrap;
+    height: auto;
+}
+.top-1 {
+    width: 100%;
+    height: 60vw;
+    min-height: 360px;
+}
+.top-2 {
+    width: 100%;
+    height: auto;
+}
+
+.desk {
+    width: 70%;
+}
+
+
+.bottom-2 {
+    margin: 0px 25px;
+    margin-bottom: 20px;
+}
+
+.bottom-2 p {
+    line-height: 20px;
+    margin-top: 13px;
+}
+
+.top-2 {
+    position: static;
+}
+
+.bottom {
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.bottom-3b {
+    display: block;
+}
+
+.bottom div {
+    width: 50%;
+}
+
+.bottom img {
+    height: 31vw;
+}
+
+.bottom-2 {
+    width: 100% !important;
+}
+.bottom-3 {
+    display: none;
+}
+
+.btn {
+    top: 52vw;
+    right: 0;
+    bottom: unset;
+    left: unset;
+    height: 8vw;
+}
+
+.btn button {
+padding: 3px 0;
+}
+
+.btn img {
+    height: 4vw;
+}
+}
+
+@media  (max-width: 375px) {
+    .desk ul {
+        display: none;
+    }
+   
+    .desk {
+        width: 50%;
+    }
+
+    .hamb {
+        display: block;
+    }
+
+    .hero-1 {
+        background-image: url(./images/mobile-image-hero-1.jpg);
+    }
+    .hero-2 {
+        background-image: url(./images/mobile-image-hero-2.jpg);
+    }
+    .hero-3 {
+        background-image: url(./images/mobile-image-hero-3.jpg);
+    }
+
+    .top-2, .bottom-2 {
+        font-size: smaller;
+    }
+
+    .bottom-3b {
+        display: none;
+    }
+    
+    .bottom div {
+        width: 100%;
+    }
+    
+    .bottom img {
+        height: auto;
+    }
+    
+    .bottom-3 {
+        display: block;
+    }
+    
+}
+
+
+@media  (max-width: 600px) {
+    
+    .btn {
+        top: 315px;
+        right: 0;
+        left: unset;
+        height: 45px;
+    }
+}
